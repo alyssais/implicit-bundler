@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if rbenv which postit &> /dev/null; then
+  postit $@
+else
+  gem install postit && rbenv rehash && postit $@
+fi
