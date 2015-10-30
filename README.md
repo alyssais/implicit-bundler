@@ -19,7 +19,7 @@ brew install penman/utils/implicit-bundler
 You also need to make sure that the `bundle` command points to Implicit Bundler. To do this, add the following to your .bashrc/.zshrc:
 
 ```sh
-alias bundle=implicit-bundler
+alias bundle=implicit-bundle
 ```
 
 Contributing
