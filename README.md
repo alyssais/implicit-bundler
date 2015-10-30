@@ -13,7 +13,7 @@ Installation
 ------------
 
 ```sh
-brew install alyssais/utils/implicit-bundler
+brew install alyssais/formulae/implicit-bundler
 ```
 
 You also need to make sure that the `bundle` command points to Implicit Bundler. To do this, add the following to your .bashrc/.zshrc:
