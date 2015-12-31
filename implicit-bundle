@@ -1,7 +1,11 @@
 #!/bin/sh
 
-if rbenv which postit &> /dev/null; then
+set -ue
+
+if (which postit && (! which rbenv || rbenv which postit)) &> /dev/null; then
   postit $@
 else
-  gem install postit && rbenv rehash && postit $@
+  gem install postit
+  rbenv rehash &> /dev/null
+  postit $@
 fi
