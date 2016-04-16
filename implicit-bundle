@@ -6,6 +6,6 @@ if (which postit && (! which rbenv || rbenv which postit)) &> /dev/null; then
   postit $@
 else
   gem install postit
-  rbenv rehash &> /dev/null
+  (rbenv rehash | true) &> /dev/null
   postit $@
 fi
