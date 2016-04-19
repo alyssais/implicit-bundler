@@ -7,8 +7,6 @@ When I do this, usually the first command I'll run is `bundle`, which I usually 
 
 Implicit Bundler solves this problem. When you run `bundle`, if it isn't installed it'll download it for you. It also wraps [postit](https://github.com/segiddins/postit), so whenver you run `bundle` in a project directory, the correct version will automatically be installed if it isn't already.
 
-**Note**: Implicit Bundler currently only works if your Ruby install is managed by [rbenv](https://github.com/sstephenson/rbenv).
-
 Installation
 ------------
 
